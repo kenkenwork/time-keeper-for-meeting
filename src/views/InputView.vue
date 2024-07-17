@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 import { computed } from 'vue'
 import { useProgramDataStore, useCurrentIndexStore } from '../stores/programData'
 
@@ -39,7 +40,6 @@ const currentIndexIncrement = currentIndexStore.currentIndexIncrement
         決定
       </button>
     </RouterLink>
-
   </div>
 </template>
 
