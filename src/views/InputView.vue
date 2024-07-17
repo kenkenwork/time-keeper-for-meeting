@@ -1,12 +1,10 @@
 <script setup lang="ts">
-// import TimerPart from '../components/TimerPart.vue'
 import { computed } from 'vue'
 import { useProgramDataStore, useCurrentIndexStore } from '../stores/programData'
 
 const programDataStore = useProgramDataStore()
 const { setMinistryNumber, setLifeNumber, addPrograms } = programDataStore
 
-// const allPrograms = computed(() => programDataStore.allPrograms)
 const ministryNumber = computed(() => programDataStore.ministryNumber)
 const lifeNumber = computed(() => programDataStore.lifeNumber)
 
